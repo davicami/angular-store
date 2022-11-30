@@ -23,6 +23,7 @@ export class ProductsHeaderComponent implements OnInit {
   }
 
   onColumnsUpdated(newColsNum: number): void {
+    console.log("new col count: " + newColsNum);
     this.columnsCountChange.emit(newColsNum);
   }
 }
